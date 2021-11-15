@@ -24,42 +24,41 @@
             <img src="images/build.svg" alt="Selo Rockeseat" />
           </span>
           <img
-            src="https://avatars.githubusercontent.com/u/7929313?v=4"
+            src="https://lorempixel.com/185/185/people/"
             alt="Foto Pessoal"
+            id="userPhoto"
           />
         </div>
-        <h1>Dannael Paz</h1>
-        <a href="https://www.github.com/dannaelpaz/" target="_blank">
+        <h1 id="userName">userName</h1>
+        <a
+          id="userLink"
+          href="https://www.github.com/dannaelpaz/"
+          target="_blank"
+        >
           <img src="images/github.svg" alt="ícone github" />
-          dannaelpaz
+          userLink
         </a>
 
-        <p>
-          Desenvolver front-end em aprendizado, foco em migração de carreira e
-          trabalho home office.
-        </p>
+        <p id="userBio">userBio</p>
 
         <ul id="socialLinks">
           <li class="youtube">
-            <a
-              href="https://www.youtube.com/channel/UChXoqKGqA1cWBDRDvTDfyiw"
-              target="_blank"
-            >
+            <a href="https://www.youtube.com/" target="_blank">
               <img src="images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
           <li class="instagram">
-            <a href="https://instagram.com/dannaelpaz" target="_blank">
+            <a href="https://instagram.com/" target="_blank">
               <img src="images/instagram.svg" alt="ícone instagram" />
             </a>
           </li>
           <li class="facebook">
-            <a href="https://facebook.com/dannaelpaz" target="_blank">
+            <a href="https://facebook.com/" target="_blank">
               <img src="images/facebook.svg" alt="ícone facebook" />
             </a>
           </li>
           <li class="twitter">
-            <a href="https://twitter.com/dannaelpaz" target="_blank">
+            <a href="https://twitter.com/" target="_blank">
               <img src="images/twitter.svg" alt="ícone twitter" />
             </a>
           </li>
@@ -67,25 +66,7 @@
       </div>
     </main>
 
-    <script>
-      // dinamic social media links
-      const linksSocialMedia ={
-        github : 'dannaelpaz',
-        youtube : 'channel/UChXoqKGqA1cWBDRDvTDfyiw',
-        facebook : 'dannaelpaz',
-        instagram : 'dannaelpaz',
-        twitter = 'dannaelpaz'
-      }
-
-      function chageSocialMediaLinks (){
-        for (let li of socialLinks.children){
-          const social = li.geAttribute('class')
-
-          li.children[0].href = `http://${social}.com/${linksSocialMedia[social]}`
-        }
-      }
-
-      function changeSocialMediaLinks(){}
-    </script>
+    <s
+    cript src="main.js"></script>
   </body>
 </html>
