@@ -24,12 +24,12 @@
             <img src="images/build.svg" alt="Selo Rockeseat" />
           </span>
           <img
-            src="https://lorempixel.com/185/185/people/"
+            src="https://avatars.githubusercontent.com/u/7929313?v=4"
             alt="Foto Pessoal"
           />
         </div>
         <h1>Dannael Paz</h1>
-        <a href="https://www.instagram.com/dannaelpaz/">
+        <a href="https://www.github.com/dannaelpaz/" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
           dannaelpaz
         </a>
@@ -39,29 +39,53 @@
           trabalho home office.
         </p>
 
-        <ul>
-          <li>
-            <a href="https://youtube.com" target="_blank">
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a
+              href="https://www.youtube.com/channel/UChXoqKGqA1cWBDRDvTDfyiw"
+              target="_blank"
+            >
               <img src="images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
-          <li>
-            <a href="https://instagram.com" target="_blank">
+          <li class="instagram">
+            <a href="https://instagram.com/dannaelpaz" target="_blank">
               <img src="images/instagram.svg" alt="ícone instagram" />
             </a>
           </li>
-          <li>
-            <a href="https://facebook.com" target="_blank">
+          <li class="facebook">
+            <a href="https://facebook.com/dannaelpaz" target="_blank">
               <img src="images/facebook.svg" alt="ícone facebook" />
             </a>
           </li>
-          <li>
-            <a href="https://twitter.com" target="_blank">
+          <li class="twitter">
+            <a href="https://twitter.com/dannaelpaz" target="_blank">
               <img src="images/twitter.svg" alt="ícone twitter" />
             </a>
           </li>
         </ul>
       </div>
     </main>
+
+    <script>
+      // dinamic social media links
+      const linksSocialMedia ={
+        github : 'dannaelpaz',
+        youtube : 'channel/UChXoqKGqA1cWBDRDvTDfyiw',
+        facebook : 'dannaelpaz',
+        instagram : 'dannaelpaz',
+        twitter = 'dannaelpaz'
+      }
+
+      function chageSocialMediaLinks (){
+        for (let li of socialLinks.children){
+          const social = li.geAttribute('class')
+
+          li.children[0].href = `http://${social}.com/${linksSocialMedia[social]}`
+        }
+      }
+
+      function changeSocialMediaLinks(){}
+    </script>
   </body>
 </html>
