@@ -6,11 +6,11 @@ const linksSocialMedia = {
   twitter: 'dannaelpaz'
 }
 
-function chageSocialMediaLinks() {
+function changeSocialMediaLinks() {
   for (let li of socialLinks.children) {
-    const social = li.geAttribute('class')
+    const social = li.getAttribute('class')
 
-    li.children[0].href = `http://${social}.com/${linksSocialMedia[social]}`
+    li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
   }
 }
 
@@ -24,7 +24,7 @@ function getGithubProfileInfos() {
     .then(data => {
       userName.textContent = data.name
       userBio.textContent = data.bio
-      userLink.textContent = data.html_url
+      userLink.href = data.html_url
       userPhoto.src = data.avatar_url
       userLogin.textContent = data.login
     })
