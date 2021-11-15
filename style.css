@@ -43,6 +43,7 @@ main {
 .avatar span {
   position: absolute;
   top: -15px;
+  right: 30px;
   z-index: 1;
 }
 
